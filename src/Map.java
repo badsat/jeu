@@ -20,6 +20,7 @@ public class Map {
 	public static String Lanterne_noire = "N";
 	
 	public static String LABYRINTHE[][] = new String[15][7];
+	
 
 	public Map() {
 	

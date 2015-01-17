@@ -1,10 +1,10 @@
 
 public abstract class Players extends Map {
 	
-	protected static int positionx;
-	protected static int positiony;
-	protected static String Colorplayer;
-	protected static String Colorcase;
+	protected  int positionx;
+	protected int positiony;
+	protected  String Color_player;
+	protected String Color_case;
 	
 
 	
@@ -16,12 +16,12 @@ public abstract class Players extends Map {
 		return positiony;
 	}
 	
-	public String getColorplayer(){
-		return Colorplayer;
+	public String getColor_player(){
+		return Color_player;
 	}
 	
-	public String getColorcase(){
-		return Colorcase;
+	public String getColor_case(){
+		return Color_case;
 	}// accesseur
 	
 	
@@ -34,11 +34,11 @@ public abstract class Players extends Map {
 	}
 	
 	public void setColorplayer(String B){
-		Colorplayer="B";
+		Color_player="B";
 	}
 	
 	public void setColorcase(String colorcase){
-		Colorcase="BN";
+		Color_case="BN";
 	}
 	
 	
@@ -49,16 +49,16 @@ public abstract class Players extends Map {
     while (Arret == false){
         Thread.sleep(120);
     	if (StdDraw.isKeyPressed(38)){ //fleche haut pour bonhomme bleu
-    		deplacerbonhomme(Colorcase, Colorplayer, positionx, 0, positiony, 1);
+    		deplacerbonhomme(Color_case, Color_player, positionx, 0, positiony, 1);
     	}
     	if (StdDraw.isKeyPressed(40)){ //fleche bas pour bonhomme bleu
-    		deplacerbonhomme(Colorcase, Colorplayer,positionx, 0, positiony, -1);
+    		deplacerbonhomme(Color_case, Color_player,positionx, 0, positiony, -1);
     	}
     	if (StdDraw.isKeyPressed(37)){ //fleche gauche pour bonhomme bleu
-    		deplacerbonhomme(Colorcase, Colorplayer, positionx, -1, positiony, 0);
+    		deplacerbonhomme(Color_case, Color_player, positionx, -1, positiony, 0);
     	}
     	if (StdDraw.isKeyPressed(39)){ //fleche droite pour le bonhomme bleu
-    		deplacerbonhomme(Colorcase, Colorplayer, positionx, 1, positiony, 0);
+    		deplacerbonhomme(Color_case, Color_player, positionx, 1, positiony, 0);
     	}
     }
 	if(StdDraw.isKeyPressed(27)){     

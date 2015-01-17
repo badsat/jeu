@@ -1,5 +1,5 @@
 
-public class gardien {
+public class Gardien {
 	 public static String B_rouge_couleur="R" ;
 	    public static int B_rouge_x = 14;
 	    public static int B_rouge_y = 6;
