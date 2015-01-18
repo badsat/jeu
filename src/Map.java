@@ -22,7 +22,7 @@ public class Map {
 	public static String LABYRINTHE[][] = new String[15][7];
 	
 
-	public Map()  {
+	public Map(){
 	
 		StdDraw.setXscale(0, X_MAX); // Création de la fênetre suivant l'axe de abscisses
 		StdDraw.setYscale(0, Y_MAX); // Création de la fênetre suivant l'axe des ordonnées
@@ -40,8 +40,10 @@ public class Map {
         	}
         }// Fin affichage labyrinthe
         
-        Players infiltré= new Voleur();
+        Players infiltre= new Voleur();
         Players garde= new Gardien();
+        
+    
         
 	}
 	

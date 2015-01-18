@@ -66,7 +66,7 @@ public class Carre {
         
         boolean Arret = false;
         while (Arret == false){
-            Thread.sleep(120);
+        	Thread.sleep(120);
         	if (StdDraw.isKeyPressed(38)){ //fleche haut pour bonhomme bleu
         		monjeu.deplacerbonhomme(B_bleu_couleurcase, B_bleu_couleur, B_bleu_x, 0, B_bleu_y, 1);
         	}
