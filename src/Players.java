@@ -26,11 +26,11 @@ public abstract class Players extends Map {
 	
 	
 	public void setPositionx(int x){
-		positionx = 0;
+		positionx = x;
 	}
 	
 	public void setPositiony(int y){
-		positiony = 6;
+		positiony = y;
 	}
 	
 	public void setColorplayer(String B){

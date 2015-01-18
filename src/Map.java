@@ -22,7 +22,7 @@ public class Map {
 	public static String LABYRINTHE[][] = new String[15][7];
 	
 
-	public Map() {
+	public Map()  {
 	
 		StdDraw.setXscale(0, X_MAX); // Création de la fênetre suivant l'axe de abscisses
 		StdDraw.setYscale(0, Y_MAX); // Création de la fênetre suivant l'axe des ordonnées
@@ -38,7 +38,11 @@ public class Map {
         	for(int y=0; y<7; y++){
         		ecrirecellule(LABYRINTHE[x][y], x, y);
         	}
-        } // Fin affichage labyrinthe
+        }// Fin affichage labyrinthe
+        
+        Players infiltré= new Voleur();
+        Players garde= new Gardien();
+        
 	}
 	
 	static void deplacerbonhomme(String couleur_depart, String couleur_destination, int position_x, int direction_x, int position_y, int direction_y) {
@@ -53,9 +57,14 @@ public class Map {
 			if (c=="N" || c=="J") {
 				ecrirecellule(couleur_depart, position_x, position_y); // départ
 				if (couleur_destination=="B" ||couleur_destination=="BN") {
-					Players.Colorcase=c;
-					Players.positionx=dx;
-					Players.positiony=dy;
+					Voleur.Color_case=c;
+					Voleur.positionx=dx;
+					Voleur.positiony=dy;
+				}
+				else {
+					Gardien.Color_case=c;			
+					Gardien.positionx=dx;
+					Gardien.positiony=dy;
 				}
 				
 				Map.ecrirecellule(couleur_destination, position_x + direction_x, position_y + direction_y); // arrivée			

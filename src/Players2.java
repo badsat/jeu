@@ -1,5 +1,5 @@
 
-public abstract class Players2 extends Map  {
+public abstract class Players2  {
 	public static String B_bleu_couleur="B" ;
     public static int B_bleu_x = 0;
     public static int B_bleu_y = 6;
